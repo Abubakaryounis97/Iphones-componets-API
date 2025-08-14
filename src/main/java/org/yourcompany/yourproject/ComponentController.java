@@ -3,6 +3,7 @@ package org.yourcompany.yourproject;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -22,6 +23,13 @@ public class ComponentController {
     @GetMapping
     public List<Component> getAllComponents() {
         return componentRepository.findAll();
+    }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<Component> getComponentById(@PathVariable Integer id) {
+        return componentRepository.findById(id)
+            .map(ResponseEntity::ok)
+            .orElse(ResponseEntity.notFound().build());
     }
 
     @PostMapping

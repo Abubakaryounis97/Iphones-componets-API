@@ -3,6 +3,7 @@ package org.yourcompany.yourproject;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -34,7 +35,13 @@ public class IphoneController {
          iphone.setId(id);
          return iphoneRepository.save(iphone);
      }
-
+     @GetMapping("/{id}")
+     public ResponseEntity<Iphone> getIphoneById(@PathVariable Integer id) {
+         return iphoneRepository.findById(id)
+             .map(ResponseEntity::ok)
+             .orElse(ResponseEntity.notFound().build());
+     }
+     
     @DeleteMapping("/{id}")
     public void deleteIphone(@PathVariable Integer id) {
         iphoneRepository.deleteById(id);

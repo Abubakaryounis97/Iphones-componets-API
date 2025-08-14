@@ -1,7 +1,5 @@
 package org.yourcompany.yourproject;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -24,7 +22,6 @@ public class Component {
 
     @ManyToOne
     @JoinColumn(name = "iphone_id", nullable = false)
-    @JsonBackReference
     private Iphone iphone;
 
     // Getters and setters
