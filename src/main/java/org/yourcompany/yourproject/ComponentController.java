@@ -20,6 +20,11 @@ public class ComponentController {
     @Autowired
     private ComponentRepository componentRepository;
 
+    @GetMapping("/iphone/{iphoneId}")
+    public List<Component> getComponentsByIphone(@PathVariable Integer iphoneId) {
+        return componentRepository.findByIphoneId(iphoneId);
+    }
+
     @GetMapping
     public List<Component> getAllComponents() {
         return componentRepository.findAll();
@@ -28,8 +33,8 @@ public class ComponentController {
     @GetMapping("/{id}")
     public ResponseEntity<Component> getComponentById(@PathVariable Integer id) {
         return componentRepository.findById(id)
-            .map(ResponseEntity::ok)
-            .orElse(ResponseEntity.notFound().build());
+                .map(ResponseEntity::ok)
+                .orElse(ResponseEntity.notFound().build());
     }
 
     @PostMapping
