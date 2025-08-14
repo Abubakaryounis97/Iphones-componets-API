@@ -1,7 +1,7 @@
 package org.yourcompany.yourproject;
 import java.util.List;
 
-import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
@@ -22,7 +22,7 @@ public class Iphone {
     private Double price;
     // components relationship 
     @OneToMany(mappedBy = "iphone", cascade = CascadeType.ALL, orphanRemoval = true)
-    @JsonManagedReference
+    @JsonIgnore
     private List<Component> components;
 
     public List<Component> getComponents() { return components; }
