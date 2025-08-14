@@ -1,9 +1,14 @@
 package org.yourcompany.yourproject;
+import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 // this the entity class for Iphone
 @Entity
@@ -15,6 +20,14 @@ public class Iphone {
     private String model;
     private Integer releaseYear;
     private Double price;
+    // components relationship 
+    @OneToMany(mappedBy = "iphone", cascade = CascadeType.ALL, orphanRemoval = true)
+    @JsonManagedReference
+    private List<Component> components;
+
+    public List<Component> getComponents() { return components; }
+    public void setComponents(List<Component> components) { this.components = components; }
+
 
     // Getters and setters
     public Integer getId() { return id; }
