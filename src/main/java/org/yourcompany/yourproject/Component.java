@@ -25,18 +25,43 @@ public class Component {
     private Iphone iphone;
 
     // Getters and setters
-    public Integer getId() { return id; }
-    public void setId(Integer id) { this.id = id; }
+    public Integer getId() {
+        return id;
+    }
 
-    public String getName() { return name; }
-    public void setName(String name) { this.name = name; }
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
-    public String getSpecs() { return specs; }
-    public void setSpecs(String specs) { this.specs = specs; }
+    public String getName() {
+        return name;
+    }
 
-    public String getType() { return type; }
-    public void setType(String type) { this.type = type; }
+    public void setName(String name) {
+        this.name = name;
+    }
 
-    public Iphone getIphone() { return iphone; }
-    public void setIphone(Iphone iphone) { this.iphone = iphone; }
+    public String getSpecs() {
+        return specs;
+    }
+
+    public void setSpecs(String specs) {
+        this.specs = specs;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public Iphone getIphone() {
+        return iphone;
+    }
+
+    public void setIphone(Iphone iphone) {
+        this.iphone = iphone;
+    }
 }

@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 // this is the controller class for Iphone
+
 @RestController
 @RequestMapping("/iphones")
 public class IphoneController {
@@ -30,21 +31,21 @@ public class IphoneController {
         return iphoneRepository.save(iphone);
     }
 
-     @PutMapping("/{id}")
-     public Iphone updateIphone(@PathVariable Integer id, @RequestBody Iphone iphone) {
-         iphone.setId(id);
-         return iphoneRepository.save(iphone);
-     }
-     @GetMapping("/{id}")
-     public ResponseEntity<Iphone> getIphoneById(@PathVariable Integer id) {
-         return iphoneRepository.findById(id)
-             .map(ResponseEntity::ok)
-             .orElse(ResponseEntity.notFound().build());
-     }
-     
+    @PutMapping("/{id}")
+    public Iphone updateIphone(@PathVariable Integer id, @RequestBody Iphone iphone) {
+        iphone.setId(id);
+        return iphoneRepository.save(iphone);
+    }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<Iphone> getIphoneById(@PathVariable Integer id) {
+        return iphoneRepository.findById(id)
+                .map(ResponseEntity::ok)
+                .orElse(ResponseEntity.notFound().build());
+    }
+
     @DeleteMapping("/{id}")
     public void deleteIphone(@PathVariable Integer id) {
         iphoneRepository.deleteById(id);
     }
 }
-
