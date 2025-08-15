@@ -21,6 +21,6 @@
 }, {
   "id" : 7,
   "model" : "Iphone postman",
-  "releaseYear" : null,
-  "price" : null
+  "releaseYear" : 2029,
+  "price" : 999999999
 } ]
