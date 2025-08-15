@@ -1,0 +1,26 @@
+[ {
+  "id" : 2,
+  "model" : "iPhone 13",
+  "releaseYear" : 2021,
+  "price" : 899.0
+}, {
+  "id" : 3,
+  "model" : "iPhone 15",
+  "releaseYear" : 2023,
+  "price" : 1200.0
+}, {
+  "id" : 4,
+  "model" : "iPhone SE",
+  "releaseYear" : 2020,
+  "price" : 399.0
+}, {
+  "id" : 5,
+  "model" : "iPhone 16",
+  "releaseYear" : 2024,
+  "price" : 1299.0
+}, {
+  "id" : 7,
+  "model" : "Iphone postman",
+  "releaseYear" : 2029,
+  "price" : 999999999
+} ]
