@@ -1,23 +1,7 @@
 [ {
-  "id" : 1,
-  "model" : "iPhone 3G",
-  "releaseYear" : 2008
-}, {
-  "id" : 2,
-  "model" : "iPhone 3GS",
-  "releaseYear" : 2009
-}, {
-  "id" : 3,
-  "model" : "iPhone 4",
-  "releaseYear" : 2010
-}, {
   "id" : 4,
   "model" : "iPhone 4S",
   "releaseYear" : 2011
-}, {
-  "id" : 5,
-  "model" : "iPhone 5",
-  "releaseYear" : 2012
 }, {
   "id" : 6,
   "model" : "iPhone 5C",
@@ -32,8 +16,8 @@
   "releaseYear" : 2014
 }, {
   "id" : 9,
-  "model" : "iPhone 6 Plus",
-  "releaseYear" : 2014
+  "model" : "string",
+  "releaseYear" : 0
 }, {
   "id" : 10,
   "model" : "iPhone 6S",
@@ -162,4 +146,20 @@
   "id" : 41,
   "model" : "iPhone 16",
   "releaseYear" : 2024
+}, {
+  "id" : 42,
+  "model" : "iPhone 3G",
+  "releaseYear" : 2008
+}, {
+  "id" : 51,
+  "model" : "string",
+  "releaseYear" : 0
+}, {
+  "id" : 52,
+  "model" : "iphone test",
+  "releaseYear" : 2027
+}, {
+  "id" : 53,
+  "model" : "iphone 55",
+  "releaseYear" : 2026
 } ]

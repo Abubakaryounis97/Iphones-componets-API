@@ -1,7 +1,8 @@
-/Users/younis/Projects/iphone/src/main/java/org/yourcompany/yourproject/ComponentController.java
-/Users/younis/Projects/iphone/src/main/java/org/yourcompany/yourproject/IphoneComponentsApplication.java
-/Users/younis/Projects/iphone/src/main/java/org/yourcompany/yourproject/Component.java
-/Users/younis/Projects/iphone/src/main/java/org/yourcompany/yourproject/ComponentRepository.java
-/Users/younis/Projects/iphone/src/main/java/org/yourcompany/yourproject/IphoneController.java
-/Users/younis/Projects/iphone/src/main/java/org/yourcompany/yourproject/Iphone.java
-/Users/younis/Projects/iphone/src/main/java/org/yourcompany/yourproject/IphoneRepository.java
+/Users/younis/Projects/Iphones-componets-API/src/main/java/org/yourcompany/yourproject/Iphone.java
+/Users/younis/Projects/Iphones-componets-API/src/main/java/org/yourcompany/yourproject/Component.java
+/Users/younis/Projects/Iphones-componets-API/src/main/java/org/yourcompany/yourproject/IphoneController.java
+/Users/younis/Projects/Iphones-componets-API/src/main/java/org/yourcompany/yourproject/ComponentRepository.java
+/Users/younis/Projects/Iphones-componets-API/src/main/java/org/yourcompany/yourproject/IphoneComponentsApplication.java
+/Users/younis/Projects/Iphones-componets-API/src/main/java/org/yourcompany/yourproject/OpenApiConfig.java
+/Users/younis/Projects/Iphones-componets-API/src/main/java/org/yourcompany/yourproject/ComponentController.java
+/Users/younis/Projects/Iphones-componets-API/src/main/java/org/yourcompany/yourproject/IphoneRepository.java

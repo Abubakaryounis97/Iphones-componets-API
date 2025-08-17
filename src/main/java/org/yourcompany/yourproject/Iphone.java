@@ -22,7 +22,6 @@ public class Iphone {
     private Integer id;
     private String model;
     private Integer releaseYear;
-    private Double price;
     // components relationship 
     @OneToMany(mappedBy = "iphone", cascade = CascadeType.ALL)
     @JsonIgnore

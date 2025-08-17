@@ -3,38 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iPhone API Frontend</title>
+    <title>iPhone & Component Tester</title>
 </head>
 <body>
-    <h1>📱 iPhone API Frontend</h1>
+    <h1>iPhone API Tester</h1>
 
-    <!-- iPhone Buttons -->
-    <button id="loadIphonesBtn">Load All iPhones</button>
-    <button id="dumpIphonesBtn">Dump iPhones to JSON</button>
-    <button id="loadIphonesJsonBtn">Load iPhones from JSON</button>
-    <button id="createIphoneBtn">Create New iPhone</button>
+    <!-- Get All iPhones -->
+    <button onclick="getAllIphones()">Get All iPhones</button><br><br>
 
+    <!-- Create iPhone -->
+    <input type="text" id="iphone-model" placeholder="Model">
+    <input type="number" id="iphone-year" placeholder="Release Year">
+    <button onclick="createIphone()">Create iPhone</button><br><br>
+
+    <!-- Update iPhone -->
+    <input type="number" id="update-iphone-id" placeholder="iPhone ID to Update">
+    <input type="text" id="update-iphone-model" placeholder="Model">
+    <input type="number" id="update-iphone-year" placeholder="Release Year">
+    <button onclick="updateIphone()">Update iPhone</button><br><br>
+
+    <!-- Delete and Get by ID -->
+    <input type="number" id="delete-iphone-id" placeholder="iPhone ID to Delete">
+    <button onclick="deleteIphone()">Delete iPhone</button><br><br>
+
+    <input type="number" id="get-iphone-id" placeholder="iPhone ID to Get">
+    <button onclick="getIphoneById()">Get iPhone By ID</button><br><br>
+
+    <button onclick="dumpIphones()">Dump iPhones to JSON</button>
+    <button onclick="loadIphones()">Load iPhones from JSON</button>
+
+    <div id="iphone-output"></div>
     <hr>
 
-    <!-- iPhone Dropdown to view components -->
-    <label for="iphoneSelect">Select iPhone to see components:</label>
-    <select id="iphoneSelect">
-        <option value="">--Select an iPhone--</option>
-    </select>
-    <button id="deleteIphoneBtn">Delete Selected iPhone</button>
+    <h1>Component API Tester</h1>
 
-    <hr>
+    <!-- Get All Components -->
+    <button onclick="getAllComponents()">Get All Components</button><br><br>
 
-    <!-- Component Buttons -->
-    <button id="loadComponentsBtn">Load All Components</button>
-    <button id="createComponentBtn">Create New Component</button>
+    <!-- Get Components by iPhone -->
+    <input type="number" id="components-iphone-id" placeholder="iPhone ID for Components">
+    <button onclick="getComponentsByIphone()">Get Components By iPhone</button><br><br>
 
-    <hr>
+    <!-- Create Component -->
+    <input type="text" id="component-name" placeholder="Name">
+    <input type="text" id="component-type" placeholder="Type">
+    <input type="text" id="component-specs" placeholder="Specs">
+    <input type="number" id="component-iphone-id-input" placeholder="iPhone ID">
+    <button onclick="createComponent()">Create Component</button><br><br>
 
-    <!-- Display area -->
-    <pre id="output">Results will appear here...</pre>
+    <!-- Update Component -->
+    <input type="number" id="update-component-id" placeholder="Component ID to Update">
+    <input type="text" id="update-component-name" placeholder="Name">
+    <input type="text" id="update-component-type" placeholder="Type">
+    <input type="text" id="update-component-specs" placeholder="Specs">
+    <input type="number" id="update-component-iphone-id-input" placeholder="iPhone ID">
+    <button onclick="updateComponent()">Update Component</button><br><br>
 
-    <!-- Link to JS -->
-    <script src="app.js"></script>
+    <!-- Delete and Get by ID -->
+    <input type="number" id="delete-component-id" placeholder="Component ID to Delete">
+    <button onclick="deleteComponent()">Delete Component</button><br><br>
+
+    <input type="number" id="get-component-id" placeholder="Component ID to Get">
+    <button onclick="getComponentById()">Get Component By ID</button><br><br>
+
+    <div id="component-output"></div>
+
+    <script src="script.js"></script>
 </body>
 </html>
