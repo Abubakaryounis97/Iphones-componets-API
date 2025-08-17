@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone API Frontend</title>
+</head>
+<body>
+    <h1>📱 iPhone API Frontend</h1>
+
+    <!-- iPhone Buttons -->
+    <button id="loadIphonesBtn">Load All iPhones</button>
+    <button id="dumpIphonesBtn">Dump iPhones to JSON</button>
+    <button id="loadIphonesJsonBtn">Load iPhones from JSON</button>
+    <button id="createIphoneBtn">Create New iPhone</button>
+
+    <hr>
+
+    <!-- iPhone Dropdown to view components -->
+    <label for="iphoneSelect">Select iPhone to see components:</label>
+    <select id="iphoneSelect">
+        <option value="">--Select an iPhone--</option>
+    </select>
+    <button id="deleteIphoneBtn">Delete Selected iPhone</button>
+
+    <hr>
+
+    <!-- Component Buttons -->
+    <button id="loadComponentsBtn">Load All Components</button>
+    <button id="createComponentBtn">Create New Component</button>
+
+    <hr>
+
+    <!-- Display area -->
+    <pre id="output">Results will appear here...</pre>
+
+    <!-- Link to JS -->
+    <script src="app.js"></script>
+</body>
+</html>

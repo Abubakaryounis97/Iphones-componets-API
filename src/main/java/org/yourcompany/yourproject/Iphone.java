@@ -60,12 +60,4 @@ public class Iphone {
     public void setReleaseYear(Integer releaseYear) {
         this.releaseYear = releaseYear;
     }
-
-    public Double getPrice() {
-        return price;
-    }
-
-    public void setPrice(Double price) {
-        this.price = price;
-    }
 }

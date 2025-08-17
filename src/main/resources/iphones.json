@@ -1,26 +1,165 @@
 [ {
+  "id" : 1,
+  "model" : "iPhone 3G",
+  "releaseYear" : 2008
+}, {
   "id" : 2,
-  "model" : "iPhone 13",
-  "releaseYear" : 2021,
-  "price" : 899.0
+  "model" : "iPhone 3GS",
+  "releaseYear" : 2009
 }, {
   "id" : 3,
-  "model" : "iPhone 15",
-  "releaseYear" : 2023,
-  "price" : 1200.0
+  "model" : "iPhone 4",
+  "releaseYear" : 2010
 }, {
   "id" : 4,
-  "model" : "iPhone SE",
-  "releaseYear" : 2020,
-  "price" : 399.0
+  "model" : "iPhone 4S",
+  "releaseYear" : 2011
 }, {
   "id" : 5,
-  "model" : "iPhone 16",
-  "releaseYear" : 2024,
-  "price" : 1299.0
+  "model" : "iPhone 5",
+  "releaseYear" : 2012
+}, {
+  "id" : 6,
+  "model" : "iPhone 5C",
+  "releaseYear" : 2013
 }, {
   "id" : 7,
-  "model" : "Iphone postman",
-  "releaseYear" : 2029,
-  "price" : 999999999
+  "model" : "iPhone 5S",
+  "releaseYear" : 2013
+}, {
+  "id" : 8,
+  "model" : "iPhone 6",
+  "releaseYear" : 2014
+}, {
+  "id" : 9,
+  "model" : "iPhone 6 Plus",
+  "releaseYear" : 2014
+}, {
+  "id" : 10,
+  "model" : "iPhone 6S",
+  "releaseYear" : 2015
+}, {
+  "id" : 11,
+  "model" : "iPhone 6S Plus",
+  "releaseYear" : 2015
+}, {
+  "id" : 12,
+  "model" : "iPhone SE (1st Gen)",
+  "releaseYear" : 2016
+}, {
+  "id" : 13,
+  "model" : "iPhone 7",
+  "releaseYear" : 2016
+}, {
+  "id" : 14,
+  "model" : "iPhone 7 Plus",
+  "releaseYear" : 2016
+}, {
+  "id" : 15,
+  "model" : "iPhone 8",
+  "releaseYear" : 2017
+}, {
+  "id" : 16,
+  "model" : "iPhone 8 Plus",
+  "releaseYear" : 2017
+}, {
+  "id" : 17,
+  "model" : "iPhone X",
+  "releaseYear" : 2017
+}, {
+  "id" : 18,
+  "model" : "iPhone XR",
+  "releaseYear" : 2018
+}, {
+  "id" : 19,
+  "model" : "iPhone XS",
+  "releaseYear" : 2018
+}, {
+  "id" : 20,
+  "model" : "iPhone XS Max",
+  "releaseYear" : 2018
+}, {
+  "id" : 21,
+  "model" : "iPhone 11",
+  "releaseYear" : 2019
+}, {
+  "id" : 22,
+  "model" : "iPhone 11 Pro",
+  "releaseYear" : 2019
+}, {
+  "id" : 23,
+  "model" : "iPhone 11 Pro Max",
+  "releaseYear" : 2019
+}, {
+  "id" : 24,
+  "model" : "iPhone SE (2nd Gen)",
+  "releaseYear" : 2020
+}, {
+  "id" : 25,
+  "model" : "iPhone 12",
+  "releaseYear" : 2020
+}, {
+  "id" : 26,
+  "model" : "iPhone 12 Mini",
+  "releaseYear" : 2020
+}, {
+  "id" : 27,
+  "model" : "iPhone 12 Pro",
+  "releaseYear" : 2020
+}, {
+  "id" : 28,
+  "model" : "iPhone 12 Pro Max",
+  "releaseYear" : 2020
+}, {
+  "id" : 29,
+  "model" : "iPhone 13",
+  "releaseYear" : 2021
+}, {
+  "id" : 30,
+  "model" : "iPhone 13 Mini",
+  "releaseYear" : 2021
+}, {
+  "id" : 31,
+  "model" : "iPhone 13 Pro",
+  "releaseYear" : 2021
+}, {
+  "id" : 32,
+  "model" : "iPhone 13 Pro Max",
+  "releaseYear" : 2021
+}, {
+  "id" : 33,
+  "model" : "iPhone 14",
+  "releaseYear" : 2022
+}, {
+  "id" : 34,
+  "model" : "iPhone 14 Plus",
+  "releaseYear" : 2022
+}, {
+  "id" : 35,
+  "model" : "iPhone 14 Pro",
+  "releaseYear" : 2022
+}, {
+  "id" : 36,
+  "model" : "iPhone 14 Pro Max",
+  "releaseYear" : 2022
+}, {
+  "id" : 37,
+  "model" : "iPhone 15",
+  "releaseYear" : 2023
+}, {
+  "id" : 38,
+  "model" : "iPhone 15 Plus",
+  "releaseYear" : 2023
+}, {
+  "id" : 39,
+  "model" : "iPhone 15 Pro",
+  "releaseYear" : 2023
+}, {
+  "id" : 40,
+  "model" : "iPhone 15 Pro Max",
+  "releaseYear" : 2023
+}, {
+  "id" : 41,
+  "model" : "iPhone 16",
+  "releaseYear" : 2024
 } ]
