@@ -1,6 +1,6 @@
 [ {
   "id" : 4,
-  "model" : "iPhone 4S",
+  "model" : "Iphone 4s+",
   "releaseYear" : 2011
 }, {
   "id" : 6,
@@ -162,4 +162,30 @@
   "id" : 53,
   "model" : "iphone 55",
   "releaseYear" : 2026
+}, {
+"id" : 54,
+  "model" : "iphone test",
+  "releaseYear" : 2025
+}, {
+"id" : 55,
+  "model" : "iphone test",
+  "releaseYear" : 2025
+},{
+"id" : 56,
+  "model" : "iphone test",
+  "releaseYear" : 2025
+},
+ {
+  "id" : 57,
+  "model" : "iphone",
+  "releaseYear" : 2025
+}, {
+  "id" : 58,
+  "model" : "iphone test",
+  "releaseYear" : 2025
+},
+{
+  "id" : 59,
+  "model" : "iphone test",
+  "releaseYear" : 2025
 } ]
