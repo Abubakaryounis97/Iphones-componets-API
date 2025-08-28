@@ -22,6 +22,9 @@ public class ComponentController {
     @Autowired
     private ComponentRepository componentRepository;
 
+    @Autowired
+    private IphoneRepository iphoneRepository;
+
     @GetMapping("/iphone/{iphoneId}")
     public List<Component> getComponentsByIphone(@PathVariable Integer iphoneId) {
         return componentRepository.findByIphoneId(iphoneId);
@@ -41,6 +44,18 @@ public class ComponentController {
 
     @PostMapping
     public Component createComponent(@RequestBody Component component) {
+        // Make sure the incoming component has iphoneId set (from frontend)
+    if (component.getIphone() == null || component.getIphone().getId() == null) {
+        throw new RuntimeException("iPhone ID is required");
+    }
+
+    // Fetch the Iphone entity from DB
+    Iphone iphone = iphoneRepository.findById(component.getIphone().getId())
+                      .orElseThrow(() -> new RuntimeException("iPhone not found"));
+
+    // Set the full entity
+    component.setIphone(iphone);
+
         return componentRepository.save(component);
     }
 
