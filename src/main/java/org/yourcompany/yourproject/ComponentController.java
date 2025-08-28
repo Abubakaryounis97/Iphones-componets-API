@@ -59,11 +59,27 @@ public class ComponentController {
         return componentRepository.save(component);
     }
 
-    @PutMapping("/{id}")
-    public Component updateComponent(@PathVariable Integer id, @RequestBody Component component) {
-        component.setId(id);
-        return componentRepository.save(component);
-    }
+   @PutMapping("/{id}")
+public ResponseEntity<Component> updateComponent(
+        @PathVariable Integer id,
+        @RequestBody Component updatedComponent
+) {
+    return componentRepository.findById(id)
+        .map(existing -> {
+            existing.setName(updatedComponent.getName());
+            existing.setType(updatedComponent.getType());
+            existing.setSpecs(updatedComponent.getSpecs());
+
+            // IMPORTANT: set the associated iphone
+            if (updatedComponent.getIphone() != null) {
+                existing.setIphone(updatedComponent.getIphone());
+            }
+
+            componentRepository.save(existing);
+            return ResponseEntity.ok(existing);
+        })
+        .orElse(ResponseEntity.notFound().build());
+}
 
     @DeleteMapping("/{id}")
     public void deleteComponent(@PathVariable Integer id) {
