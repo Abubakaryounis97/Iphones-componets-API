@@ -1,4 +1,8 @@
+org/yourcompany/yourproject/Component.class
 org/yourcompany/yourproject/IphoneComponentsApplication.class
+org/yourcompany/yourproject/ComponentController.class
 org/yourcompany/yourproject/IphoneRepository.class
+org/yourcompany/yourproject/ComponentRepository.class
 org/yourcompany/yourproject/Iphone.class
 org/yourcompany/yourproject/IphoneController.class
+org/yourcompany/yourproject/OpenApiConfig.class

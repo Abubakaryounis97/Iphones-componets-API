@@ -18,7 +18,7 @@ public class Component {
     private String name;
     private String specs;
     private String type;
-    private String iphoneId;
+  
 
     @ManyToOne
     @JoinColumn(name = "iphone_id", nullable = false)

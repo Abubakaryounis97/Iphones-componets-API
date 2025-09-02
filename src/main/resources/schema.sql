@@ -2,7 +2,7 @@
 CREATE TABLE iphones (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     model TEXT NOT NULL,
-    release_year INTEGER,
+    release_year INTEGER
 );
 
 -- Detail Table
